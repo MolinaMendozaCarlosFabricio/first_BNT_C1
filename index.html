@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes la roca</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poetsen+One&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poetsen+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cabecera">
+        <img src="/src/phtos/la_roca-removebg-preview.png" id="fotoDeLaRoca">
+        <h1 id="tittle">Abarrotes la Roca</h1>
+    </div>
+
+    <div class="contenido">
+        <h3>Registro de productos</h3>
+        <input id="nombre" type="text" placeholder="Nombre del producto">
+        <input id="precio" type="number" placeholder="Precio">
+        <input id="id" type="text" placeholder="ID">
+        <input id="existencias" type="number" placeholder="Existencias">
+        <button id="btn-agregar">Agregar</button>
+    </div>
+
+    <div class="contenido">
+        <h3>Máximo y mínimo producto</h3>
+        <button id="max-min">Buscar</button>
+        <p>Mínimo: </p>
+        <ul id="min"></ul>
+        <p>Máximo: </p>
+        <ul id="max"></ul>
+    </div>
+
+    <div class="contenido">
+        <h3>Buscar producto</h3>
+        <p>Ingrese el nombre del producto</p>
+        <input id="nombreABuscar" type="text" placeholder="Nombre del producto">
+        <button id="search">Buscar</button>
+        <ul id="resultados"></ul>
+    </div>
+
+    <div class="contenido">
+        <h3>Lista de productos</h3>
+        <button id="refresh">Actualizar</button>
+        <ul id="colaDeImpresion"></ul>
+    </div>
+
+    <div class="foot_of_page" id="foot_of_page1">
+        <img src="/src/phtos/kirby face.png" id="kirby_face">
+        <p>©27/may/2024 Carlos Fabricio Molina Mendoza 233376 3do A</p>
+    </div>
+
+    <script src="./src/controllers/script.js" type="module"></script>
+</body>
+</html>
